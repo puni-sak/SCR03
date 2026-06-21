@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>予約システム</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<div class="tabs">
+  <ul class="tab-list">
+    <li class="tab-item active" tabindex="0">呼出待ち</li>
+    <li class="tab-item" tabindex="0">呼出済</li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-panel active">
+        <!-- 予約待ち　中身-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>番号</th>
+                    <th>代表者氏名</th>
+                    <th>人数</th>
+                    <th>呼出状況変更ボタン</th>
+                </tr>
+            </thead>
+            <tbody id="mi_table"></tbody>
+        </table>
+    </div>
+
+    <div class="tab-panel">
+        <!-- 予約済　中身-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>番号</th>
+                    <th>代表者氏名</th>
+                    <th>人数</th>
+                    <th>呼出状況変更ボタン</th>
+                </tr>
+            </thead>
+            <tbody id="sumi_table"></tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+<script src="./table.js"></script>
+</body>
+</html>

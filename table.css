@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(26, 33, 58);
+  color: #e9eaeb;
+}
+
+.tabs {
+  max-width: 450px;
+  margin: 5% auto;
+}
+
+.tab-list {
+  display: flex;
+  margin: 0px;
+  position: relative;
+  right: 40px;
+}
+
+.tab-item {
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(62, 62, 96);
+  border: solid 1px rgb(62, 62, 96);
+  padding: 0.5em 1.2em;
+  cursor: pointer;
+  color: #e9eaeb;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-item.active {
+  background-color: rgb(28, 30, 41);
+}
+
+.tab-panel.active {
+  display: block;
+  padding: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr:nth-child(odd){
+  background-color: rgb(50, 40, 100);
+}
+
+table tr:nth-child(even){
+  background-color:rgb(70, 60, 120);
+}
+
+th, td {
+  border: 1px solid #e9eaeb;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(70, 60, 120);
+}
+
+button {
+    background-color: rgb(196, 226, 248);
+    font-weight: bold;
+    color: rgb(26, 33, 58);
+}
+
+#mi_table .mi {
+  display: auto;
+}
+
+#mi_table .sumi {
+  display: none;
+}
+
+#sumi_table .mi {
+  display: none;
+}
+
+#sumi_table .sumi {
+  display: auto;
+}
